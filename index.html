@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Joe Schmoe api demo | Home</title>
+    //include bootstrap, yeah! I am very lazy to code css right now
     <link
       rel="stylesheet"
       href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
@@ -23,26 +24,27 @@
     <div class="container border border-primary mt-5 px-2 py-2">
       <center>
         <h1>API DEMO, Enter Name To Get A Cool Profile Image</h1>
-
         <label for="name" class="bmd-label-floating">Input Your Name</label>
         <input type="text" class="form-control" id="name" />
         <button class="btn btn-primary btn-raised">Submit</button>
         <br />
         <img
-          src="https://placehold.it/200x200?text=placeholder+Image"
+          src="https://picsum.photos/200"
           class="imgchange"
           height="300"
           width="300"
         />
       </center>
     </div>
-
+    //include Jquery //this can be done without jquery also using simpel js
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
-
+    //this is the main code that's doing everything //we are going to api
+    endpoint and then we change the Image SRC attribute with the link of image
+    we get before
     <script type="text/javascript">
       $(document).ready(function () {
         $("button").click(function () {
