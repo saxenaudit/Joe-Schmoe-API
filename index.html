@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Joe Schmoe api demo | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      body {
+        font-family: "Avenir Next";
+      }
+    </style>
+  </head>
+  <body style="background-color: #daf7a6">
+    <div class="container border border-primary mt-5 px-2 py-2">
+      <center>
+        <h1>API DEMO, Enter Name To Get A Cool Profile Image</h1>
+
+        <label for="name" class="bmd-label-floating">Input Your Name</label>
+        <input type="text" class="form-control" id="name" />
+        <button class="btn btn-primary btn-raised">Submit</button>
+        <br />
+        <img
+          src="https://placehold.it/200x200?text=placeholder+Image"
+          class="imgchange"
+        />
+      </center>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("button").click(function () {
+          const name = $("#name").val();
+          alert(name);
+          $(".imgchange").attr("src", `https://joeschmoe.io/api/v1/${name}`);
+          const b = $(".imgchange");
+          console.log(b);
+        });
+      });
+    </script>
+  </body>
+</html>
