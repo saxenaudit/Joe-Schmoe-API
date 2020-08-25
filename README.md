@@ -11,11 +11,10 @@ Check them [Here](https://joeschmoe.io/).
 The big advantage of the API is that when you request the same Schmoe multiple times, you'll get the same avatar each time—perfect for when you're associating an image with a user's identity.
 
 # How To
-
 **(just need basic understanding of HTML & JavaScript)**
 
 1. Clone the repo.
-2. Browse the code it's very easy.
+2. Browse the code it's very easy. (check comments)
 
 # [DEMO](https://apidemo.surge.sh)
 
